@@ -63,6 +63,16 @@ namespace 无畏契约真实4比3快捷键修改分辨率.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap screen_屏幕 {
+            get {
+                object obj = ResourceManager.GetObject("screen-屏幕", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 主页 {
             get {
                 object obj = ResourceManager.GetObject("主页", resourceCulture);
@@ -77,6 +87,24 @@ namespace 无畏契约真实4比3快捷键修改分辨率.Properties {
             get {
                 object obj = ResourceManager.GetObject("主页 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 System.IO.MemoryStream 的 System.IO.UnmanagedMemoryStream 类型的本地化资源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream 修改失败 {
+            get {
+                return ResourceManager.GetStream("修改失败", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 System.IO.MemoryStream 的 System.IO.UnmanagedMemoryStream 类型的本地化资源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream 修改成功 {
+            get {
+                return ResourceManager.GetStream("修改成功", resourceCulture);
             }
         }
         
@@ -141,6 +169,24 @@ namespace 无畏契约真实4比3快捷键修改分辨率.Properties {
         }
         
         /// <summary>
+        ///   查找类似于 System.IO.MemoryStream 的 System.IO.UnmanagedMemoryStream 类型的本地化资源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream 恢复失败 {
+            get {
+                return ResourceManager.GetStream("恢复失败", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 System.IO.MemoryStream 的 System.IO.UnmanagedMemoryStream 类型的本地化资源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream 恢复成功 {
+            get {
+                return ResourceManager.GetStream("恢复成功", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap 明亮模式 {
@@ -156,6 +202,26 @@ namespace 无畏契约真实4比3快捷键修改分辨率.Properties {
         internal static System.Drawing.Bitmap 明亮模式__1_ {
             get {
                 object obj = ResourceManager.GetObject("明亮模式 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 退出 {
+            get {
+                object obj = ResourceManager.GetObject("退出", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 退出__1_ {
+            get {
+                object obj = ResourceManager.GetObject("退出 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
