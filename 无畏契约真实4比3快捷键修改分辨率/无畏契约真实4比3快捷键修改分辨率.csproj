@@ -2,14 +2,56 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+	  <PlatformTarget>AnyCPU</PlatformTarget>
+	  <Copyright>Copyright © 2025 DJXinXin</Copyright>
+	  <FileVersion>$(Version)</FileVersion>
+	  <AssemblyVersion>$(Version)</AssemblyVersion>
+	  <Version>1.0</Version>
+	  <Authors>DJXinXin</Authors>
+	  <Description>基于 AntdUI开发的快速切换分辨率工具</Description>
+	  <Platforms>AnyCPU;x64</Platforms>
+	  <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+	  <ApplicationIcon>微信图片_2025-07-18_022150_789_256x256.ico</ApplicationIcon>
+	  <PublishSingleFile>true</PublishSingleFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="微信图片_2025-07-18_022150_789_256x256.ico" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
     <PackageReference Include="AntdUI" Version="2.0.11" />
+	  <PackageReference Include="Costura.Fody">
+		  <Version>4.1.0</Version>
+		  <PrivateAssets>all</PrivateAssets>
+		  <!--<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>-->
+    </PackageReference>
+	  <PackageReference Include="Fody" Version="6.9.2">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -26,5 +68,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
+
 
 </Project>

@@ -1,4 +1,6 @@
-﻿namespace 无畏契约真实4比3快捷键修改分辨率
+﻿using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+namespace 无畏契约真实4比3快捷键修改分辨率
 {
     partial class Form1
     {
@@ -28,42 +30,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            AntdUI.MenuItem menuItem1 = new AntdUI.MenuItem();
-            AntdUI.MenuItem menuItem2 = new AntdUI.MenuItem();
             AntdUI.Tabs.StyleLine styleLine1 = new AntdUI.Tabs.StyleLine();
             AntdUI.SegmentedItem segmentedItem1 = new AntdUI.SegmentedItem();
             AntdUI.SegmentedItem segmentedItem2 = new AntdUI.SegmentedItem();
+            AntdUI.MenuItem menuItem1 = new AntdUI.MenuItem();
+            AntdUI.MenuItem menuItem2 = new AntdUI.MenuItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new AntdUI.Label();
-            menu1 = new AntdUI.Menu();
-            avatar1 = new AntdUI.Avatar();
             tabs1 = new AntdUI.Tabs();
             tabPage1 = new AntdUI.TabPage();
             collapse1 = new AntdUI.Collapse();
             collapseItem1 = new AntdUI.CollapseItem();
+            原始分辨率y = new AntdUI.InputNumber();
+            原始分辨率x = new AntdUI.InputNumber();
             label5 = new AntdUI.Label();
-            ysbblxx = new AntdUI.Input();
             label2 = new AntdUI.Label();
-            ysfbly = new AntdUI.Input();
             ysfblx = new AntdUI.Input();
             collapseItem2 = new AntdUI.CollapseItem();
+            更改分辨率y = new AntdUI.InputNumber();
+            更改分辨率x = new AntdUI.InputNumber();
             label3 = new AntdUI.Label();
-            ggfbly = new AntdUI.Input();
-            ggfblx = new AntdUI.Input();
             collapseItem3 = new AntdUI.CollapseItem();
+            刷新率 = new AntdUI.InputNumber();
             label4 = new AntdUI.Label();
-            sxlhz = new AntdUI.Input();
+            collapseItem4 = new AntdUI.CollapseItem();
+            label6 = new AntdUI.Label();
             tabPage2 = new AntdUI.TabPage();
             alert3 = new AntdUI.Alert();
             avatar2 = new AntdUI.Avatar();
             alert1 = new AntdUI.Alert();
             alert2 = new AntdUI.Alert();
             segmented1 = new AntdUI.Segmented();
+            avatar1 = new AntdUI.Avatar();
+            menu1 = new AntdUI.Menu();
+            pageHeader1 = new AntdUI.PageHeader();
+            pageHeader2 = new AntdUI.PageHeader();
+            button1 = new AntdUI.Button();
+            button2 = new AntdUI.Button();
+            button3 = new AntdUI.Button();
+            label7 = new AntdUI.Label();
+            当前版本框 = new AntdUI.Label();
+            最新版本 = new AntdUI.Label();
+            label9 = new AntdUI.Label();
             tabs1.SuspendLayout();
             tabPage1.SuspendLayout();
             collapse1.SuspendLayout();
             collapseItem1.SuspendLayout();
             collapseItem2.SuspendLayout();
             collapseItem3.SuspendLayout();
+            collapseItem4.SuspendLayout();
             tabPage2.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,46 +87,14 @@
             label1.BackColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(-1, 0);
             label1.Name = "label1";
+            label1.ShadowColor = Color.BlueViolet;
+            label1.ShadowOffsetX = 10;
+            label1.ShadowOffsetY = 10;
+            label1.ShadowOpacity = 1F;
             label1.Size = new Size(97, 305);
             label1.TabIndex = 1;
             label1.Text = "";
             label1.MouseDown += Form1_MouseDown;
-            // 
-            // menu1
-            // 
-            menu1.BackColor = SystemColors.ButtonHighlight;
-            menu1.BackHover = Color.CadetBlue;
-            menuItem1.Icon = Properties.Resources.主页;
-            menuItem1.IconActive = Properties.Resources.主页__1_;
-            menuItem1.ID = "0";
-            menuItem1.Select = true;
-            menuItem1.Text = "主页";
-            menuItem2.Icon = Properties.Resources.关于;
-            menuItem2.IconActive = Properties.Resources.关于__1_;
-            menuItem2.ID = "1";
-            menuItem2.Text = "关于";
-            menu1.Items.Add(menuItem1);
-            menu1.Items.Add(menuItem2);
-            menu1.Location = new Point(-1, 119);
-            menu1.Name = "menu1";
-            menu1.Size = new Size(97, 82);
-            menu1.TabIndex = 2;
-            menu1.Text = "menu1";
-            menu1.SelectChanged += menu1_SelectChanged;
-            // 
-            // avatar1
-            // 
-            avatar1.BackColor = SystemColors.ButtonHighlight;
-            avatar1.ForeColor = SystemColors.ButtonHighlight;
-            avatar1.Image = Properties.Resources.微信图片_2025_07_18_022150_789;
-            avatar1.Location = new Point(16, 14);
-            avatar1.Name = "avatar1";
-            avatar1.OriginalBackColor = SystemColors.ButtonHighlight;
-            avatar1.Radius = 32;
-            avatar1.Size = new Size(64, 64);
-            avatar1.TabIndex = 3;
-            avatar1.Text = "a";
-            avatar1.MouseDown += Form1_MouseDown;
             // 
             // tabs1
             // 
@@ -139,12 +122,14 @@
             // 
             // collapse1
             // 
+            collapse1.BackColor = SystemColors.Control;
             collapse1.Items.Add(collapseItem1);
             collapse1.Items.Add(collapseItem2);
             collapse1.Items.Add(collapseItem3);
+            collapse1.Items.Add(collapseItem4);
             collapse1.Location = new Point(0, 0);
             collapse1.Name = "collapse1";
-            collapse1.Size = new Size(415, 302);
+            collapse1.Size = new Size(412, 296);
             collapse1.TabIndex = 0;
             collapse1.Text = "collapse1";
             collapse1.Unique = true;
@@ -152,18 +137,48 @@
             // 
             // collapseItem1
             // 
+            collapseItem1.BackgroundImageLayout = ImageLayout.None;
+            collapseItem1.Controls.Add(原始分辨率y);
+            collapseItem1.Controls.Add(原始分辨率x);
             collapseItem1.Controls.Add(label5);
-            collapseItem1.Controls.Add(ysbblxx);
             collapseItem1.Controls.Add(label2);
-            collapseItem1.Controls.Add(ysfbly);
             collapseItem1.Controls.Add(ysfblx);
             collapseItem1.Expand = true;
             collapseItem1.Location = new Point(19, 59);
             collapseItem1.Name = "collapseItem1";
-            collapseItem1.Size = new Size(377, 59);
+            collapseItem1.Size = new Size(374, 59);
             collapseItem1.TabIndex = 0;
             collapseItem1.Text = "原始分辨率";
+            collapseItem1.Click += collapseItem1_Click;
             collapseItem1.MouseDown += Form1_MouseDown;
+            // 
+            // 原始分辨率y
+            // 
+            原始分辨率y.Location = new Point(205, 8);
+            原始分辨率y.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
+            原始分辨率y.Minimum = new decimal(new int[] { 0, 0, 0, 0 });
+            原始分辨率y.Name = "原始分辨率y";
+            原始分辨率y.SelectionStart = 1;
+            原始分辨率y.ShowControl = false;
+            原始分辨率y.Size = new Size(69, 46);
+            原始分辨率y.TabIndex = 10;
+            原始分辨率y.Text = "0";
+            原始分辨率y.TextAlign = HorizontalAlignment.Center;
+            原始分辨率y.WheelModifyEnabled = false;
+            // 
+            // 原始分辨率x
+            // 
+            原始分辨率x.Location = new Point(105, 8);
+            原始分辨率x.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
+            原始分辨率x.Minimum = new decimal(new int[] { 0, 0, 0, 0 });
+            原始分辨率x.Name = "原始分辨率x";
+            原始分辨率x.SelectionStart = 1;
+            原始分辨率x.ShowControl = false;
+            原始分辨率x.Size = new Size(69, 46);
+            原始分辨率x.TabIndex = 9;
+            原始分辨率x.Text = "0";
+            原始分辨率x.TextAlign = HorizontalAlignment.Center;
+            原始分辨率x.WheelModifyEnabled = false;
             // 
             // label5
             // 
@@ -175,33 +190,12 @@
             label5.Text = "x";
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // ysbblxx
-            // 
-            ysbblxx.Location = new Point(106, 8);
-            ysbblxx.Name = "ysbblxx";
-            ysbblxx.SelectionStart = 4;
-            ysbblxx.Size = new Size(69, 46);
-            ysbblxx.TabIndex = 6;
-            ysbblxx.Text = "1920";
-            ysbblxx.TextAlign = HorizontalAlignment.Center;
-            // 
             // label2
             // 
             label2.Location = new Point(0, 0);
             label2.Name = "label2";
             label2.Size = new Size(0, 0);
             label2.TabIndex = 0;
-            // 
-            // ysfbly
-            // 
-            ysfbly.Location = new Point(207, 8);
-            ysfbly.Name = "ysfbly";
-            ysfbly.SelectionStart = 4;
-            ysfbly.Size = new Size(68, 46);
-            ysfbly.TabIndex = 1;
-            ysfbly.Text = "1080";
-            ysfbly.TextAlign = HorizontalAlignment.Center;
-            ysfbly.TextChanged += ysfbly_TextChanged;
             // 
             // ysfblx
             // 
@@ -212,15 +206,45 @@
             // 
             // collapseItem2
             // 
+            collapseItem2.Controls.Add(更改分辨率y);
+            collapseItem2.Controls.Add(更改分辨率x);
             collapseItem2.Controls.Add(label3);
-            collapseItem2.Controls.Add(ggfbly);
-            collapseItem2.Controls.Add(ggfblx);
-            collapseItem2.Location = new Point(-377, -60);
+            collapseItem2.Location = new Point(-374, -60);
             collapseItem2.Name = "collapseItem2";
-            collapseItem2.Size = new Size(377, 60);
+            collapseItem2.Size = new Size(374, 60);
             collapseItem2.TabIndex = 1;
             collapseItem2.Text = "更改分辨率";
             collapseItem2.MouseDown += Form1_MouseDown;
+            // 
+            // 更改分辨率y
+            // 
+            更改分辨率y.Location = new Point(205, 6);
+            更改分辨率y.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
+            更改分辨率y.Minimum = new decimal(new int[] { 0, 0, 0, 0 });
+            更改分辨率y.Name = "更改分辨率y";
+            更改分辨率y.SelectionStart = 1;
+            更改分辨率y.ShowControl = false;
+            更改分辨率y.Size = new Size(69, 46);
+            更改分辨率y.TabIndex = 12;
+            更改分辨率y.Text = "0";
+            更改分辨率y.TextAlign = HorizontalAlignment.Center;
+            更改分辨率y.WheelModifyEnabled = false;
+            更改分辨率y.ValueChanged += 更改分辨率y_ValueChanged;
+            // 
+            // 更改分辨率x
+            // 
+            更改分辨率x.Location = new Point(105, 6);
+            更改分辨率x.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
+            更改分辨率x.Minimum = new decimal(new int[] { 0, 0, 0, 0 });
+            更改分辨率x.Name = "更改分辨率x";
+            更改分辨率x.SelectionStart = 1;
+            更改分辨率x.ShowControl = false;
+            更改分辨率x.Size = new Size(69, 46);
+            更改分辨率x.TabIndex = 11;
+            更改分辨率x.Text = "0";
+            更改分辨率x.TextAlign = HorizontalAlignment.Center;
+            更改分辨率x.WheelModifyEnabled = false;
+            更改分辨率x.ValueChanged += 更改分辨率x_ValueChanged;
             // 
             // label3
             // 
@@ -232,36 +256,31 @@
             label3.Text = "x";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // ggfbly
-            // 
-            ggfbly.Location = new Point(202, 7);
-            ggfbly.Name = "ggfbly";
-            ggfbly.SelectionStart = 4;
-            ggfbly.Size = new Size(68, 46);
-            ggfbly.TabIndex = 4;
-            ggfbly.Text = "1080";
-            ggfbly.TextAlign = HorizontalAlignment.Center;
-            // 
-            // ggfblx
-            // 
-            ggfblx.Location = new Point(106, 7);
-            ggfblx.Name = "ggfblx";
-            ggfblx.SelectionStart = 4;
-            ggfblx.Size = new Size(69, 46);
-            ggfblx.TabIndex = 3;
-            ggfblx.Text = "1440";
-            ggfblx.TextAlign = HorizontalAlignment.Center;
-            // 
             // collapseItem3
             // 
+            collapseItem3.Controls.Add(刷新率);
             collapseItem3.Controls.Add(label4);
-            collapseItem3.Controls.Add(sxlhz);
-            collapseItem3.Location = new Point(-377, -60);
+            collapseItem3.Location = new Point(-374, -60);
             collapseItem3.Name = "collapseItem3";
-            collapseItem3.Size = new Size(377, 60);
+            collapseItem3.Size = new Size(374, 60);
             collapseItem3.TabIndex = 2;
             collapseItem3.Text = "刷新率";
             collapseItem3.MouseDown += Form1_MouseDown;
+            // 
+            // 刷新率
+            // 
+            刷新率.Location = new Point(132, 7);
+            刷新率.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
+            刷新率.Minimum = new decimal(new int[] { 0, 0, 0, 0 });
+            刷新率.Name = "刷新率";
+            刷新率.SelectionStart = 1;
+            刷新率.ShowControl = false;
+            刷新率.Size = new Size(69, 46);
+            刷新率.TabIndex = 11;
+            刷新率.Text = "0";
+            刷新率.TextAlign = HorizontalAlignment.Center;
+            刷新率.WheelModifyEnabled = false;
+            刷新率.ValueChanged += 刷新率_ValueChanged;
             // 
             // label4
             // 
@@ -273,15 +292,23 @@
             label4.Text = "HZ";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // sxlhz
+            // collapseItem4
             // 
-            sxlhz.Location = new Point(133, 8);
-            sxlhz.Name = "sxlhz";
-            sxlhz.SelectionStart = 3;
-            sxlhz.Size = new Size(69, 46);
-            sxlhz.TabIndex = 3;
-            sxlhz.Text = "144";
-            sxlhz.TextAlign = HorizontalAlignment.Center;
+            collapseItem4.Controls.Add(label6);
+            collapseItem4.Location = new Point(-374, -60);
+            collapseItem4.Name = "collapseItem4";
+            collapseItem4.Size = new Size(374, 60);
+            collapseItem4.TabIndex = 3;
+            collapseItem4.Text = "快捷键设置";
+            // 
+            // label6
+            // 
+            label6.Location = new Point(48, 4);
+            label6.Name = "label6";
+            label6.Size = new Size(278, 53);
+            label6.TabIndex = 1;
+            label6.Text = "暂无添加，F1修改 F2复原";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tabPage2
             // 
@@ -366,27 +393,136 @@
             segmentedItem2.IconActive = Properties.Resources.切换_暗色模式;
             segmented1.Items.Add(segmentedItem1);
             segmented1.Items.Add(segmentedItem2);
-            segmented1.Location = new Point(6, 271);
+            segmented1.Location = new Point(6, 236);
             segmented1.Name = "segmented1";
             segmented1.OriginalBackColor = SystemColors.ButtonHighlight;
+            segmented1.Radius = 16;
             segmented1.SelectIndex = 0;
             segmented1.Size = new Size(83, 23);
-            segmented1.TabIndex = 5;
+            segmented1.TabIndex = 8;
             segmented1.Text = "segmented1";
             segmented1.SelectIndexChanged += segmented1_SelectIndexChanged;
+            // 
+            // avatar1
+            // 
+            avatar1.BackColor = SystemColors.ButtonHighlight;
+            avatar1.ForeColor = SystemColors.ButtonHighlight;
+            avatar1.Image = Properties.Resources.微信图片_2025_07_18_022150_789;
+            avatar1.Location = new Point(16, 12);
+            avatar1.Name = "avatar1";
+            avatar1.OriginalBackColor = SystemColors.ButtonHighlight;
+            avatar1.Radius = 32;
+            avatar1.Size = new Size(64, 64);
+            avatar1.TabIndex = 7;
+            avatar1.Text = "a";
+            // 
+            // menu1
+            // 
+            menu1.BackColor = SystemColors.ButtonHighlight;
+            menu1.BackHover = Color.CadetBlue;
+            menuItem1.Icon = Properties.Resources.主页;
+            menuItem1.IconActive = Properties.Resources.主页__1_;
+            menuItem1.ID = "0";
+            menuItem1.Select = true;
+            menuItem1.Text = "主页";
+            menuItem2.Icon = Properties.Resources.关于;
+            menuItem2.IconActive = Properties.Resources.关于__1_;
+            menuItem2.ID = "1";
+            menuItem2.Text = "关于";
+            menu1.Items.Add(menuItem1);
+            menu1.Items.Add(menuItem2);
+            menu1.Location = new Point(4, 117);
+            menu1.Name = "menu1";
+            menu1.Size = new Size(90, 82);
+            menu1.TabIndex = 6;
+            menu1.Text = "menu1";
+            menu1.SelectChanged += menu1_SelectChanged;
+            // 
+            // pageHeader1
+            // 
+            pageHeader1.Location = new Point(0, 0);
+            pageHeader1.Name = "pageHeader1";
+            pageHeader1.Size = new Size(0, 0);
+            pageHeader1.TabIndex = 0;
+            // 
+            // pageHeader2
+            // 
+            pageHeader2.Location = new Point(34, 6);
+            pageHeader2.Name = "pageHeader2";
+            pageHeader2.Size = new Size(360, 35);
+            pageHeader2.TabIndex = 1000;
+            pageHeader2.Text = "";
+            pageHeader2.Visible = false;
+            // 
+            // button1
+            // 
+            button1.Icon = Properties.Resources.退出;
+            button1.IconHover = Properties.Resources.退出__1_;
+            button1.Location = new Point(30, 265);
+            button1.Name = "button1";
+            button1.OriginalBackColor = SystemColors.ButtonHighlight;
+            button1.Size = new Size(32, 34);
+            button1.TabIndex = 9;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(0, 0);
+            button2.Name = "button2";
+            button2.Size = new Size(0, 0);
+            button2.TabIndex = 0;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(0, 0);
+            button3.Name = "button3";
+            button3.Size = new Size(0, 0);
+            button3.TabIndex = 0;
+            // 
+            // label7
+            // 
+            label7.Location = new Point(0, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(0, 0);
+            label7.TabIndex = 0;
+            // 
+            // 当前版本框
+            // 
+            当前版本框.Location = new Point(0, 0);
+            当前版本框.Name = "当前版本框";
+            当前版本框.Size = new Size(0, 0);
+            当前版本框.TabIndex = 0;
+            // 
+            // 最新版本
+            // 
+            最新版本.Location = new Point(0, 0);
+            最新版本.Name = "最新版本";
+            最新版本.Size = new Size(0, 0);
+            最新版本.TabIndex = 0;
+            // 
+            // label9
+            // 
+            label9.Location = new Point(0, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(0, 0);
+            label9.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(513, 306);
+            Controls.Add(button1);
             Controls.Add(segmented1);
-            Controls.Add(tabs1);
             Controls.Add(avatar1);
             Controls.Add(menu1);
+            Controls.Add(tabs1);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Resizable = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "无畏契约快捷4比3";
             Load += Form1_Load;
             tabs1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
@@ -394,6 +530,7 @@
             collapseItem1.ResumeLayout(false);
             collapseItem2.ResumeLayout(false);
             collapseItem3.ResumeLayout(false);
+            collapseItem4.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -401,29 +538,41 @@
         #endregion
 
         private AntdUI.Label label1;
-        private AntdUI.Menu menu1;
-        private AntdUI.Avatar avatar1;
         private AntdUI.Tabs tabs1;
         private AntdUI.TabPage tabPage1;
         private AntdUI.TabPage tabPage2;
-        private AntdUI.Collapse collapse1;
-        private AntdUI.CollapseItem collapseItem1;
-        private AntdUI.Label label2;
-        private AntdUI.Input ysfbly;
-        private AntdUI.Input ysfblx;
-        private AntdUI.CollapseItem collapseItem2;
-        private AntdUI.CollapseItem collapseItem3;
-        private AntdUI.Label label3;
-        private AntdUI.Input ggfbly;
-        private AntdUI.Input ggfblx;
-        private AntdUI.Label label4;
-        private AntdUI.Input sxlhz;
         private AntdUI.Alert alert1;
-        private AntdUI.Label label5;
-        private AntdUI.Input ysbblxx;
         private AntdUI.Alert alert2;
         private AntdUI.Avatar avatar2;
         private AntdUI.Alert alert3;
         private AntdUI.Segmented segmented1;
+        private AntdUI.Avatar avatar1;
+        private AntdUI.Menu menu1;
+        private AntdUI.PageHeader pageHeader1;
+        private AntdUI.PageHeader pageHeader2;
+        private AntdUI.Collapse collapse1;
+        private AntdUI.CollapseItem collapseItem1;
+        private AntdUI.Label label5;
+        private AntdUI.Input ysbblxx;
+        private AntdUI.Label label2;
+        private AntdUI.Input ysfblx;
+        private AntdUI.CollapseItem collapseItem2;
+        private AntdUI.Label label3;
+        private AntdUI.CollapseItem collapseItem3;
+        private AntdUI.Label label4;
+        private AntdUI.CollapseItem collapseItem4;
+        private AntdUI.Button button1;
+        private AntdUI.Button button2;
+        private AntdUI.Button button3;
+        private AntdUI.InputNumber 原始分辨率x;
+        private AntdUI.InputNumber 原始分辨率y;
+        private AntdUI.InputNumber 更改分辨率y;
+        private AntdUI.InputNumber 更改分辨率x;
+        private AntdUI.InputNumber 刷新率;
+        private AntdUI.Label label7;
+        private AntdUI.Label 当前版本框;
+        private AntdUI.Label 最新版本;
+        private AntdUI.Label label9;
+        private AntdUI.Label label6;
     }
 }
